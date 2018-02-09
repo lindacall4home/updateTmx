@@ -16,13 +16,13 @@ class Header extends Component {
   render() {
     return (
       <nav>
-        <div className="nav-wrapper">
+        <div className="nav-wrapper light-blue darken-3">
           <a className="left brand-logo">
             Alteryx Translation Memory
           </a>
           <ul className="right">
             <li>
-              {this.renderContent()}
+
             </li>
           </ul>
         </div>

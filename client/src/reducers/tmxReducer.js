@@ -1,7 +1,7 @@
 import { READ_FILE } from '../actions/types';
 
 export default function(state = {
-  file:{}
+  tmx:{}
   },
   action){
   console.log(action);
@@ -10,7 +10,7 @@ export default function(state = {
     case READ_FILE:
     return {
       ...state,
-      file: action.file
+      tmx: action.tmx
     }
     default:
       return state;

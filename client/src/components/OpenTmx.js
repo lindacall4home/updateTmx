@@ -8,11 +8,17 @@ class OpenTmx extends Component {
 
   render(){
     return(
-      <FileInput
-        readAs='text'
-        onLoad={(event, file) => this.props.onSelectFile(event, file)}
+      <div style={ {width: '90%', height: '90%' }}>
+        <label >
+          <FileInput
+            readAs='text'
+            style={ { display: 'none' } }
+            onLoad={(event, file) => this.props.onSelectFile(event, file)}
 
-      />
+          />
+          <a className="waves-effect waves-light light-blue darken-3 center btn">Open TMX</a>
+        </label>
+      </div>
     );
   }
 }
